@@ -1,0 +1,4 @@
+Gebruikte hardware IPASS:
+- Arduino Due
+- ILI9163 LCD
+- Push buttons 			(x4)

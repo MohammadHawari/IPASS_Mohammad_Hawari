@@ -1,0 +1,120 @@
+\hypertarget{_i_l_i9163_8hpp}{}\doxysection{ILI9163.\+hpp File Reference}
+\label{_i_l_i9163_8hpp}\index{ILI9163.hpp@{ILI9163.hpp}}
+{\ttfamily \#include \char`\"{}hwlib.\+hpp\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_i_l_i9163__spi__res__wrx__cs}{ILI9163\+\_\+spi\+\_\+res\+\_\+wrx\+\_\+cs}}
+\begin{DoxyCompactList}\small\item\em abstract ILI9163 class \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_i_l_i9163__spi__128x128__direct__res__wrx__cs}{ILI9163\+\_\+spi\+\_\+128x128\+\_\+direct\+\_\+res\+\_\+wrx\+\_\+cs}}
+\begin{DoxyCompactList}\small\item\em direct ILI9163 window \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_i_l_i9163__spi__128x128__buffered__res__wrx__cs}{ILI9163\+\_\+spi\+\_\+128x128\+\_\+buffered\+\_\+res\+\_\+wrx\+\_\+cs}}
+\begin{DoxyCompactList}\small\item\em buffered ILI9163 window \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_i_l_i9163_8hpp_ad779c2f4f5c4f6131ef435882767a2af}\label{_i_l_i9163_8hpp_ad779c2f4f5c4f6131ef435882767a2af}} 
+using {\bfseries ILI9163\+\_\+display} = \mbox{\hyperlink{class_i_l_i9163__spi__128x128__direct__res__wrx__cs}{ILI9163\+\_\+spi\+\_\+128x128\+\_\+direct\+\_\+res\+\_\+wrx\+\_\+cs}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{_i_l_i9163_8hpp_a71d175eed57f34998d346aad59ab5320}{ILI9163\+\_\+commands}} \+: uint8\+\_\+t \{ \newline
+{\bfseries nop} = 0x00
+, {\bfseries soft\+\_\+reset} = 0x01
+, {\bfseries get\+\_\+red\+\_\+channel} = 0x06
+, {\bfseries get\+\_\+green\+\_\+channel} = 0x07
+, \newline
+{\bfseries get\+\_\+blue\+\_\+channel} = 0x08
+, {\bfseries get\+\_\+pixel\+\_\+format} = 0x0c
+, {\bfseries get\+\_\+power\+\_\+mode} = 0x0a
+, {\bfseries get\+\_\+address\+\_\+mode} = 0x0b
+, \newline
+{\bfseries get\+\_\+display\+\_\+mode} = 0x0d
+, {\bfseries get\+\_\+signal\+\_\+mode} = 0x0e
+, {\bfseries get\+\_\+diagnostic\+\_\+result} = 0x0f
+, {\bfseries enter\+\_\+sleep\+\_\+mode} = 0x10
+, \newline
+{\bfseries exit\+\_\+sleep\+\_\+mode} = 0x11
+, {\bfseries enter\+\_\+partial\+\_\+mode} = 0x12
+, {\bfseries enter\+\_\+normal\+\_\+mode} = 0x13
+, {\bfseries exit\+\_\+invert\+\_\+mode} = 0x20
+, \newline
+{\bfseries enter\+\_\+invert\+\_\+mode} = 0x21
+, {\bfseries set\+\_\+gamma\+\_\+curve} = 0x26
+, {\bfseries set\+\_\+display\+\_\+off} = 0x28
+, {\bfseries set\+\_\+display\+\_\+on} = 0x29
+, \newline
+{\bfseries set\+\_\+column\+\_\+address} = 0x2a
+, {\bfseries set\+\_\+page\+\_\+address} = 0x2b
+, {\bfseries write\+\_\+memory\+\_\+start} = 0x2c
+, {\bfseries write\+\_\+\+LUT} = 0x2d
+, \newline
+{\bfseries read\+\_\+memory\+\_\+start} = 0x2e
+, {\bfseries set\+\_\+partial\+\_\+area} = 0x30
+, {\bfseries set\+\_\+scroll\+\_\+area} = 0x33
+, {\bfseries set\+\_\+tear\+\_\+off} = 0x34
+, \newline
+{\bfseries set\+\_\+tear\+\_\+on} = 0x35
+, {\bfseries set\+\_\+address\+\_\+mode} = 0x36
+, {\bfseries set\+\_\+scroll\+\_\+start} = 0x37
+, {\bfseries exit\+\_\+idle\+\_\+mode} = 0x38
+, \newline
+{\bfseries enter\+\_\+idle\+\_\+mode} = 0x39
+, {\bfseries set\+\_\+pixel\+\_\+format} = 0x3a
+, {\bfseries write\+\_\+memory\+\_\+continue} = 0x3c
+, {\bfseries read\+\_\+memory\+\_\+continue} = 0x3e
+, \newline
+{\bfseries set\+\_\+tear\+\_\+scanline} = 0x44
+, {\bfseries get\+\_\+scanline} = 0x45
+, {\bfseries Read\+\_\+\+ID1} = 0xda
+, {\bfseries Read\+\_\+\+ID2} = 0xdb
+, \newline
+{\bfseries Read\+\_\+\+ID3} = 0xdc
+, {\bfseries GAM\+\_\+\+R\+\_\+\+SEL} = 0xf2
+, {\bfseries NEGATIVE\+\_\+\+GAMMA\+\_\+\+CORRECT} = 0x\+E1
+, {\bfseries POSITIVE\+\_\+\+GAMMA\+\_\+\+CORRECT} = 0x\+E0
+, \newline
+{\bfseries POWER\+\_\+\+CONTROL1} = 0x\+C0
+, {\bfseries POWER\+\_\+\+CONTROL2} = 0x\+C1
+, {\bfseries POWER\+\_\+\+CONTROL3} = 0x\+C2
+, {\bfseries POWER\+\_\+\+CONTROL4} = 0x\+C3
+, \newline
+{\bfseries POWER\+\_\+\+CONTROL5} = 0x\+C4
+, {\bfseries VCOM\+\_\+\+CONTROL1} = 0x\+C5
+, {\bfseries VCOM\+\_\+\+CONTROL2} = 0x\+C6
+, {\bfseries VCOM\+\_\+\+OFFSET\+\_\+\+CONTROL} = 0x\+C7
+, \newline
+{\bfseries FRAME\+\_\+\+RATE\+\_\+\+CONTROL1} = 0x\+B1
+, {\bfseries FRAME\+\_\+\+RATE\+\_\+\+CONTROL2} = 0x\+B2
+, {\bfseries FRAME\+\_\+\+RATE\+\_\+\+CONTROL3} = 0x\+B3
+, {\bfseries DISPLAY\+\_\+\+INVERSION} = 0x\+B4
+, \newline
+{\bfseries SOURCE\+\_\+\+DRIVER\+\_\+\+DIRECTION} = 0x\+B7
+, {\bfseries GATE\+\_\+\+DRIVER\+\_\+\+DIRECTION} = 0x\+B8
+, {\bfseries WRITE\+\_\+\+ID4\+\_\+\+VALUE} = 0x\+D3
+, {\bfseries NV\+\_\+\+MEMORY\+\_\+\+FUNCTION1} = 0x\+D7
+, \newline
+{\bfseries NV\+\_\+\+MEMORY\+\_\+\+FUNCTION2} = 0x\+DE
+ \}
+\begin{DoxyCompactList}\small\item\em ILI9163 LCD color display. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_i_l_i9163_8hpp_a71d175eed57f34998d346aad59ab5320}\label{_i_l_i9163_8hpp_a71d175eed57f34998d346aad59ab5320}} 
+\index{ILI9163.hpp@{ILI9163.hpp}!ILI9163\_commands@{ILI9163\_commands}}
+\index{ILI9163\_commands@{ILI9163\_commands}!ILI9163.hpp@{ILI9163.hpp}}
+\doxysubsubsection{\texorpdfstring{ILI9163\_commands}{ILI9163\_commands}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_i_l_i9163_8hpp_a71d175eed57f34998d346aad59ab5320}{ILI9163\+\_\+commands}} \+: uint8\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+ILI9163 LCD color display. 
+
+This class implements an interface to an 130 x 130 pixel color LCD display. The interface is SPI 4 pins (SCL, SDA, CS, A0). The driver chip is an ILI9163 a-\/\+Si TFT LCD .
+
+The interface is direct\+: all writes will be directly written to the display.
+
+connect pin VCC to 5v and led to 3.\+3 v.
+
+This type of display is reasonably priced and available from lots of sources. ILI9163 chip commands 

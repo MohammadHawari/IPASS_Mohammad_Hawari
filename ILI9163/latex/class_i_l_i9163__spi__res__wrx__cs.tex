@@ -1,0 +1,87 @@
+\hypertarget{class_i_l_i9163__spi__res__wrx__cs}{}\doxysection{ILI9163\+\_\+spi\+\_\+res\+\_\+wrx\+\_\+cs Class Reference}
+\label{class_i_l_i9163__spi__res__wrx__cs}\index{ILI9163\_spi\_res\_wrx\_cs@{ILI9163\_spi\_res\_wrx\_cs}}
+
+
+abstract ILI9163 class  
+
+
+
+
+{\ttfamily \#include $<$ILI9163.\+hpp$>$}
+
+Inheritance diagram for ILI9163\+\_\+spi\+\_\+res\+\_\+wrx\+\_\+cs\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_i_l_i9163__spi__res__wrx__cs}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_l_i9163__spi__res__wrx__cs_ac9ab705fcb395a234b14f427e8debb79}{ILI9163\+\_\+spi\+\_\+res\+\_\+wrx\+\_\+cs}} (hwlib\+::spi\+\_\+bus \&bus, hwlib\+::target\+::pin\+\_\+out \&res, hwlib\+::target\+::pin\+\_\+out \&wrx, hwlib\+::target\+::pin\+\_\+out \&cs)
+\item 
+\mbox{\Hypertarget{class_i_l_i9163__spi__res__wrx__cs_aab7f431ed04c10effb24e5895f0aa254}\label{class_i_l_i9163__spi__res__wrx__cs_aab7f431ed04c10effb24e5895f0aa254}} 
+void \mbox{\hyperlink{class_i_l_i9163__spi__res__wrx__cs_aab7f431ed04c10effb24e5895f0aa254}{command}} (\mbox{\hyperlink{_i_l_i9163_8hpp_a71d175eed57f34998d346aad59ab5320}{ILI9163\+\_\+commands}} c)
+\begin{DoxyCompactList}\small\item\em send a command without data \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_i_l_i9163__spi__res__wrx__cs_ad556c3b945d538cd506f6519d974b746}\label{class_i_l_i9163__spi__res__wrx__cs_ad556c3b945d538cd506f6519d974b746}} 
+void \mbox{\hyperlink{class_i_l_i9163__spi__res__wrx__cs_ad556c3b945d538cd506f6519d974b746}{parameter}} (uint8\+\_\+t p)
+\begin{DoxyCompactList}\small\item\em send 8 bit parameter \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_i_l_i9163__spi__res__wrx__cs_a35bf44def9bdda503aa87b94d003d53b}\label{class_i_l_i9163__spi__res__wrx__cs_a35bf44def9bdda503aa87b94d003d53b}} 
+void \mbox{\hyperlink{class_i_l_i9163__spi__res__wrx__cs_a35bf44def9bdda503aa87b94d003d53b}{data}} (uint8\+\_\+t d)
+\begin{DoxyCompactList}\small\item\em send 8 bit data \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_i_l_i9163__spi__res__wrx__cs_adbcbeb8e9a91d2176287f90fe2c1cd16}\label{class_i_l_i9163__spi__res__wrx__cs_adbcbeb8e9a91d2176287f90fe2c1cd16}} 
+void \mbox{\hyperlink{class_i_l_i9163__spi__res__wrx__cs_adbcbeb8e9a91d2176287f90fe2c1cd16}{data16}} (uint16\+\_\+t d)
+\begin{DoxyCompactList}\small\item\em send 16 bit data \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_i_l_i9163__spi__res__wrx__cs_a7bc1006234e8691eff13a9eabd17d173}\label{class_i_l_i9163__spi__res__wrx__cs_a7bc1006234e8691eff13a9eabd17d173}} 
+void \mbox{\hyperlink{class_i_l_i9163__spi__res__wrx__cs_a7bc1006234e8691eff13a9eabd17d173}{set\+Address}} (uint16\+\_\+t x1, uint16\+\_\+t y1, uint16\+\_\+t x2, uint16\+\_\+t y2)
+\begin{DoxyCompactList}\small\item\em set colom and page address then start a write transaction \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_i_l_i9163__spi__res__wrx__cs_a5abc2e02ebf3b798678119d05433a378}\label{class_i_l_i9163__spi__res__wrx__cs_a5abc2e02ebf3b798678119d05433a378}} 
+void \mbox{\hyperlink{class_i_l_i9163__spi__res__wrx__cs_a5abc2e02ebf3b798678119d05433a378}{pixels\+\_\+byte\+\_\+write}} (hwlib\+::xy location, uint16\+\_\+t col)
+\begin{DoxyCompactList}\small\item\em write the pixel byte d at column x page y with the color col \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_i_l_i9163__spi__res__wrx__cs_ad9060d0388690fa6550cd4675005bcf7}\label{class_i_l_i9163__spi__res__wrx__cs_ad9060d0388690fa6550cd4675005bcf7}} 
+void \mbox{\hyperlink{class_i_l_i9163__spi__res__wrx__cs_ad9060d0388690fa6550cd4675005bcf7}{draw\+Rect\+Filled}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t w, uint16\+\_\+t h, uint16\+\_\+t colour)
+\begin{DoxyCompactList}\small\item\em draw a filled rectangle \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_i_l_i9163__spi__res__wrx__cs_ab9bd7211890e1b20cbe30448b7cf0d17}\label{class_i_l_i9163__spi__res__wrx__cs_ab9bd7211890e1b20cbe30448b7cf0d17}} 
+void \mbox{\hyperlink{class_i_l_i9163__spi__res__wrx__cs_ab9bd7211890e1b20cbe30448b7cf0d17}{draw\+Pixel}} (hwlib\+::xy location, uint8\+\_\+t size, uint16\+\_\+t colour)
+\begin{DoxyCompactList}\small\item\em draw a biger pixel \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_i_l_i9163__spi__res__wrx__cs_a77a0b6948849fc148ae98ede188f0778}\label{class_i_l_i9163__spi__res__wrx__cs_a77a0b6948849fc148ae98ede188f0778}} 
+void \mbox{\hyperlink{class_i_l_i9163__spi__res__wrx__cs_a77a0b6948849fc148ae98ede188f0778}{ILI9163\+\_\+clear}} (uint16\+\_\+t col)
+\begin{DoxyCompactList}\small\item\em clears the display with color col \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_i_l_i9163__spi__res__wrx__cs_a84bc7d82130831592c0b608d36a95b94}\label{class_i_l_i9163__spi__res__wrx__cs_a84bc7d82130831592c0b608d36a95b94}} 
+hwlib\+::spi\+\_\+bus \& {\bfseries bus}
+\item 
+\mbox{\Hypertarget{class_i_l_i9163__spi__res__wrx__cs_a56c98c6b284048a016b068003a903930}\label{class_i_l_i9163__spi__res__wrx__cs_a56c98c6b284048a016b068003a903930}} 
+hwlib\+::target\+::pin\+\_\+out \& {\bfseries res}
+\item 
+\mbox{\Hypertarget{class_i_l_i9163__spi__res__wrx__cs_a93deca1cfbbecc1bb00577a34b62b47d}\label{class_i_l_i9163__spi__res__wrx__cs_a93deca1cfbbecc1bb00577a34b62b47d}} 
+hwlib\+::target\+::pin\+\_\+out \& {\bfseries wrx}
+\item 
+\mbox{\Hypertarget{class_i_l_i9163__spi__res__wrx__cs_abebfa4156d3909cc16be58be357113f1}\label{class_i_l_i9163__spi__res__wrx__cs_abebfa4156d3909cc16be58be357113f1}} 
+hwlib\+::target\+::pin\+\_\+out \& {\bfseries cs}
+\item 
+\mbox{\Hypertarget{class_i_l_i9163__spi__res__wrx__cs_a41d31b0f11727d6213b1fc4ad63bcc15}\label{class_i_l_i9163__spi__res__wrx__cs_a41d31b0f11727d6213b1fc4ad63bcc15}} 
+hwlib\+::xy {\bfseries cursor}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+abstract ILI9163 class 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_i_l_i9163__spi__res__wrx__cs_ac9ab705fcb395a234b14f427e8debb79}\label{class_i_l_i9163__spi__res__wrx__cs_ac9ab705fcb395a234b14f427e8debb79}} 
+\index{ILI9163\_spi\_res\_wrx\_cs@{ILI9163\_spi\_res\_wrx\_cs}!ILI9163\_spi\_res\_wrx\_cs@{ILI9163\_spi\_res\_wrx\_cs}}
+\index{ILI9163\_spi\_res\_wrx\_cs@{ILI9163\_spi\_res\_wrx\_cs}!ILI9163\_spi\_res\_wrx\_cs@{ILI9163\_spi\_res\_wrx\_cs}}
+\doxysubsubsection{\texorpdfstring{ILI9163\_spi\_res\_wrx\_cs()}{ILI9163\_spi\_res\_wrx\_cs()}}
+{\footnotesize\ttfamily ILI9163\+\_\+spi\+\_\+res\+\_\+wrx\+\_\+cs\+::\+ILI9163\+\_\+spi\+\_\+res\+\_\+wrx\+\_\+cs (\begin{DoxyParamCaption}\item[{hwlib\+::spi\+\_\+bus \&}]{bus,  }\item[{hwlib\+::target\+::pin\+\_\+out \&}]{res,  }\item[{hwlib\+::target\+::pin\+\_\+out \&}]{wrx,  }\item[{hwlib\+::target\+::pin\+\_\+out \&}]{cs }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_i_l_i9163__spi__res__wrx__cs}{ILI9163\+\_\+spi\+\_\+res\+\_\+wrx\+\_\+cs}} constructor
+
+construct by providing the spi bus and the res, wrx and cs pins 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_i_l_i9163_8hpp}{ILI9163.\+hpp}}\item 
+\mbox{\hyperlink{_i_l_i9163_8cpp}{ILI9163.\+cpp}}\end{DoxyCompactItemize}
